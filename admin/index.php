@@ -55,5 +55,3 @@ $num_row = mysqli_num_rows($result);
 			</div>
 		</div>
     </div>
-
-<?php include('footer.php') ?>
