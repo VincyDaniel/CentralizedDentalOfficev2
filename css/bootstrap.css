@@ -462,7 +462,7 @@ a:focus {
 .row-fluid .span5 {
   width: 40.42553191489362%;
   *width: 40.37234042553192%;
-}
+} 
 
 .row-fluid .span4 {
   width: 31.914893617021278%;
@@ -1822,41 +1822,7 @@ select:focus:invalid:focus {
   margin-left: 0;
 }
 
-input.search-query {
-  padding-right: 14px;
-  padding-right: 4px \9;
-  padding-left: 14px;
-  padding-left: 4px \9;
-  /* IE7-8 doesn't have border-radius, so don't indent the padding */
-
-  margin-bottom: 0;
-  -webkit-border-radius: 15px;
-     -moz-border-radius: 15px;
-          border-radius: 15px;
-}
-
-/* Allow for input prepend/append in search forms */
-
-.form-search .input-append .search-query,
-.form-search .input-prepend .search-query {
-  -webkit-border-radius: 0;
-     -moz-border-radius: 0;
-          border-radius: 0;
-}
-
-.form-search .input-append .search-query {
-  -webkit-border-radius: 14px 0 0 14px;
-     -moz-border-radius: 14px 0 0 14px;
-          border-radius: 14px 0 0 14px;
-}
-
 .form-search .input-append .btn {
-  -webkit-border-radius: 0 14px 14px 0;
-     -moz-border-radius: 0 14px 14px 0;
-          border-radius: 0 14px 14px 0;
-}
-
-.form-search .input-prepend .search-query {
   -webkit-border-radius: 0 14px 14px 0;
      -moz-border-radius: 0 14px 14px 0;
           border-radius: 0 14px 14px 0;
@@ -3195,12 +3161,18 @@ button.close {
   -webkit-appearance: none;
 }
 
+.login_sign_up {
+  position: absolute;
+  top: 28%; /* Adjust as needed */
+  right: 50%; /* Adjust as needed */
+  transform: translate(-175%, 0); /* Adjust horizontal positioning */
+  align-items: center; /* Center vertically */
+}
+
 .btn {
   display: inline-block;
   *display: inline;
   padding: 4px 12px;
-  margin-bottom: 0;
-  *margin-left: .3em;
   font-size: 14px;
   line-height: 20px;
   color: #333333;
@@ -3208,28 +3180,30 @@ button.close {
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
   vertical-align: middle;
   cursor: pointer;
-  background-color: #f5f5f5;
-  *background-color: #e6e6e6;
-  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
-  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
-  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
-  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
-  background-repeat: repeat-x;
+  background-color: #C9BB8E; /* Change background color to #C9BB8E */
   border: 1px solid #cccccc;
-  *border: 0;
   border-color: #e6e6e6 #e6e6e6 #bfbfbf;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
   border-bottom-color: #b3b3b3;
   -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
   *zoom: 1;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+#signup {
+  color: #000000; /* Black color for the sign-up link */
+  text-decoration: none;
+  margin-left: 5px; /* Add margin for spacing */
+}
+
+#signup:hover {
+  color: #000000; /* Hover color */
 }
 
 .btn:hover,
@@ -3290,8 +3264,8 @@ button.close {
 }
 
 .btn-large {
-  padding: 11px 19px;
-  font-size: 17.5px;
+  padding: 11px 80px;
+  font-size: 22px;
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
@@ -4760,7 +4734,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .nav > li > a {
   color: #3dccf8;
   font-size:20px;
-  height:30px;
+  height:55px;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -4790,7 +4764,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .nav .active > a:focus {
   color: #ffffff;
   background-color: #035680;
-  height:30px;
+  height:20px;
 }
 
 .navbar-inverse .navbar-link {
@@ -4832,44 +4806,6 @@ input[type="submit"].btn.btn-mini {
   border-bottom-color: #ffffff;
 }
 
-.navbar-inverse .navbar-search .search-query {
-  color: #000000;
-  
-  border-color: #111111;
-  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.15);
-     -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.15);
-          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.15);
-  -webkit-transition: none;
-     -moz-transition: none;
-       -o-transition: none;
-          transition: none;
-}
-
-.navbar-inverse .navbar-search .search-query:-moz-placeholder {
-  color: #cccccc;
-}
-
-.navbar-inverse .navbar-search .search-query:-ms-input-placeholder {
-  color: #cccccc;
-}
-
-.navbar-inverse .navbar-search .search-query::-webkit-input-placeholder {
-  color: #cccccc;
-}
-
-.navbar-inverse .navbar-search .search-query:focus,
-.navbar-inverse .navbar-search .search-query.focused {
-  padding: 5px 15px;
-  color: #333333;
-  text-shadow: 0 1px 0 #ffffff;
-  background-color: #ffffff;
-  border: 0;
-  outline: 0;
-  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
-     -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
-}
-
 .navbar-inverse .btn-navbar {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
@@ -4902,6 +4838,39 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .btn-navbar.active {
   background-color: #000000 \9;
 }
+
+ul.nav {
+  padding-top: 20px;
+}
+
+.navbar-inner .nav li:first-child {
+  margin-right: 200px;
+}
+
+.nav-collapse ul.nav li:not(:first-child) {
+  margin-top: 20px; 
+}
+
+.masthead {
+  background-image: url('backgroundhigh.png');
+	background-size: cover;
+	min-height:60vh;
+  height: 570px; /* Adjust height to match previous margin-top value */
+	position: absolute;
+	left: 0;
+	top: 20px;
+	width: 100%;
+	z-index: -1;
+	padding-top: 104px;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .masthead {
+    background-size: contain;
+  }
+}
+
 
 .breadcrumb {
   padding: 8px 15px;
