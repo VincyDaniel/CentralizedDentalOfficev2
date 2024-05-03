@@ -11,30 +11,30 @@
 								<?php include('navbar_dasboard.php') ?>
 						    <div class="alert alert-info">
                                     <button type="button" class="close" data-dismiss="alert">&times;</button>
-                                    <strong><i class="icon-user icon-large"></i>&nbsp;Service Table</strong>
+                                    <strong><i class="icon-user icon-large"></i>&nbsp;Inventory Table</strong>
                             </div>
-							<?php include('add_service.php'); ?>
+							<?php include('add_inventory.php'); ?>
                             <table cellpadding="0" cellspacing="0" border="0" class="table  table-bordered" id="example">
                             
                                 <thead>
                                     <tr>
-                                        <th>Service Offer</th>
-                                        <th>Price</th>                                 
+                                        <th>Inventory Items</th>
+                                        <th>Quantity</th>                                 
                                         <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
 								 
-                                  <?php $user_query=mysqli_query($conn,"select * from service")or die(mysqli_error($conn));
+                                  <?php $user_query=mysqli_query($conn,"select * from inventory")or die(mysqli_error($conn));
 									while($row=mysqli_fetch_array($user_query)){
-									$id=$row['service_id']; ?>
+									$id=$row['inventory_id']; ?>
 									 <tr class="del<?php echo $id ?>">
-                                    <td><?php echo $row['service_offer']; ?></td> 
-                                    <td><?php echo $row['price']; ?></td> 
+                                    <td><?php echo $row['item_name']; ?></td> 
+                                    <td><?php echo $row['item_quantity']; ?></td> 
                                     <td width="100">
                                         <a rel="tooltip"  title="Delete" id="<?php echo $id; ?>" class="btn btn-danger"><i class="icon-trash icon-large"></i></a>
                                         <a rel="tooltip"  title="Edit" id="e<?php echo $id; ?>" href="#edit<?php echo $id; ?>" data-toggle="modal" class="btn btn-success"><i class="icon-pencil icon-large"></i></a>
-                                    <?php include('edit_service.php'); ?>
+                                    <?php include('edit_inventory.php'); ?>
 									</td>
 									<?php include('toolttip_edit_delete.php'); ?>
 									</tr>
@@ -50,7 +50,7 @@
                 if(confirm("Are you sure you want to delete this Data?")){
                     $.ajax({
                         type: "POST",
-                        url: "delete_service.php",
+                        url: "delete_inventory.php",
                         data: ({id: id}),
                         cache: false,
                         success: function(html){

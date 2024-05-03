@@ -10,20 +10,20 @@
     <div class="modal-body">
 		<form class="form-horizontal" method="POST">
 			<div class="control-group">
-			<label class="control-label" for="inputEmail">Service</label>
+			<label class="control-label" for="serviceOffer">Service</label>
 			<div class="controls">
-			<input type="text" name="service" id="inputEmail" placeholder="Service" required>
+			<input type="text" name="service" id="serviceOffer" placeholder="Service" required>
 			</div>
 			</div>
 			<div class="control-group">
-			<label class="control-label" for="inputPassword">Price</label>
+			<label class="control-label" for="priceInput">Price</label>
 			<div class="controls">
-			<input type="text" name="price" id="inputPassword" placeholder="Price"  required>
+			<input type="text" name="price" id="priceInput" placeholder="Price"  required>
 			</div>
 			</div>
 			<div class="control-group">
 			<div class="controls">
-			<button type="submit" name="ad" class="btn btn-info">Add</button>
+			<button name="submit" type="submit" class="btn btn-success"><i class="icon-save icon-large"></i>&nbsp;Save</button>
 			</div>
 			</div>
 	</form>
@@ -35,7 +35,7 @@
 	
 	<?php
 	
-	if (isset($_POST['price'])){
+	if (isset($_POST['submit'])){
 	$service=$_POST['service'];
 	$price=$_POST['price'];
 	

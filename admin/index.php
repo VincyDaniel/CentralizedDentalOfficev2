@@ -8,7 +8,7 @@
 						<img src="../img/dr.jpg" class="img-rounded">
 					</div>
 				<div class="login">
-				<div class="alert alert-info"><strong>Please Enter the Details Below..</strong></div>
+				<div class="alert alert-info"><strong>Good Day Admin. Please Enter Your Credentials Below</strong></div>
 						<form class="form-horizontal" method="POST">
 								<div class="control-group">
 									<label class="control-label" for="inputEmail"><strong>Username</strong></label>

@@ -3,16 +3,16 @@
 			<div class="alert alert-info"><strong>Edit User</strong></div>
 	<form class="form-horizontal" method="post">
 			<div class="control-group">
-				<label class="control-label" for="inputEmail">Service Offer</label>
+				<label class="control-label" for="serviceOffer">Service Offer</label>
 				<div class="controls">
-				<input type="hidden" id="inputEmail" name="id" value="<?php echo $row['service_id']; ?>" required>
-				<input type="text" id="inputEmail" name="service" value="<?php echo $row['service_offer']; ?>" required>
+				<input type="hidden" id="serviceOffer" name="id" value="<?php echo $row['service_id']; ?>" required>
+				<input type="text" id="serviceOffer" name="service" value="<?php echo $row['service_offer']; ?>" required>
 				</div>
 			</div>
 			<div class="control-group">
-				<label class="control-label" for="inputPassword">Price</label>
+				<label class="control-label" for="priceInput">Price</label>
 				<div class="controls">
-				<input type="text" name="price" id="inputPassword" value="<?php echo $row['price']; ?>" required>
+				<input type="text" name="price" id="priceInput" value="<?php echo $row['price']; ?>" required>
 				</div>
 			</div>
 			<div class="control-group">
@@ -30,11 +30,11 @@
 	<?php
 	if (isset($_POST['edit'])){
 	
-	$user_id=$_POST['id'];
+	$service_id=$_POST['id'];
 	$service=$_POST['service'];
 	$price=$_POST['price'];
 	
-	mysqli_query($conn,"update service set service_offer='$service', price='$price' where user_id='$user_id'")or die(mysqli_error($conn)); ?>
+	mysqli_query($conn,"update service set service_offer='$service', price='$price' where service_id='$service_id'")or die(mysqli_error($conn)); ?>
 	<script>
 	window.location="service.php";
 	</script>

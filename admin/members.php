@@ -34,7 +34,7 @@
 									while($row=mysqli_fetch_array($user_query)){
 									$id=$row['member_id']; ?>
 									 <tr class="del<?php echo $id ?>">
-                                    <td><?php echo $row['firstname']." ".$row['middlename']." ".$row['lastname']; ?></td> 
+                                    <td><?php echo $row['firstname']." ".$row['lastname']; ?></td> 
                                     <td><?php echo $row['age']; ?></td> 
                                     <td><?php echo $row['gender']; ?></td> 
                                     <td><?php echo $row['address']; ?></td> 
@@ -73,4 +73,3 @@
 
 						</div>
     </div>
-<?php include('footer.php') ?>

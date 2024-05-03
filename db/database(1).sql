@@ -139,6 +139,19 @@ INSERT INTO `users` (`user_id`, `username`, `password`) VALUES
 (9, 'teph', 'teph'),
 (10, 'teph', 'teph');
 
+CREATE TABLE IF NOT EXISTS `inventory` (
+  `inventory_id` int(11) NOT NULL AUTO_INCREMENT,
+  `item_name` varchar(100) NOT NULL,
+  `item_quantity` int(11) NOT NULL,
+  PRIMARY KEY (`inventory_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;
+
+INSERT INTO `inventory` (`item_name`, `item_quantity`) VALUES
+('Pencils', 100),
+('Notebooks', 50),
+('Pens', 75);
+
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

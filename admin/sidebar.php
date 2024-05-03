@@ -1,7 +1,5 @@
 <div class="side_dental">
 		<script language="javascript" type="text/javascript">
-			/* Visit http://www.yaldex.com/ for full source code
-			and get more free JavaScript, CSS and DHTML scripts! */
 			<!-- Begin
 			var timerID = null;
 			var timerRunning = false;
@@ -52,15 +50,13 @@
 										</div>
 									</div>
 								</div>
-								<ul class="nav nav-tabs nav-stacked">
-									<li class="active">
-										<a href="dasboard.php"><i class="icon-home icon-large"></i>&nbsp;Home<i class="icon-arrow-right icon-large"></i></a>
-									</li>
-									<li><a href="sched_today.php"><i class="icon-file-alt icon-large"></i>&nbsp;Schedule for Today <i class="icon-arrow-right icon-large"></i></a></li>
-									<li><a href="schedule.php"><i class="icon-list icon-large"></i>&nbsp;Schedule<i class="icon-arrow-right icon-large"></i></a></li>
-									<li><a href="service.php"><i class="icon-medkit	icon-large"></i>&nbsp;Service<i class="icon-arrow-right icon-large"></i></a></li>
-									<li><a href="user.php"><i class="icon-user icon-large"></i>&nbsp;User Accounts<i class="icon-arrow-right icon-large"></i></a></li>
-									<li><a href="members.php"><i class="icon-group icon-large"></i>&nbsp;Members<i class="icon-arrow-right icon-large"></i></a></li>
-									<li><a href="note.php"><i class="icon-file icon-large"></i>&nbsp;Note<i class="icon-arrow-right icon-large"></i></a></li>
+								<ul class="nav nav-tabs nav-stacked">														
+									<li><a href="schedule.php"><i class="icon-list icon-large"></i>&nbsp;Schedules<i class="icon-arrow-right icon-large"></i></a></li>
+									<li><a href="sched_today.php"><i class="icon-file-alt icon-large"></i>&nbsp;Current Date's Schedule<i class="icon-arrow-right icon-large"></i></a></li>
+									<li><a href="service.php"><i class="icon-medkit	icon-large"></i>&nbsp;Services Provided<i class="icon-arrow-right icon-large"></i></a></li>
+									<li><a href="user.php"><i class="icon-user icon-large"></i>&nbsp;Staff Accounts<i class="icon-arrow-right icon-large"></i></a></li>
+									<li><a href="members.php"><i class="icon-group icon-large"></i>&nbsp;Customer List<i class="icon-arrow-right icon-large"></i></a></li>
+									<li><a href="inventory.php"><i class="icon-file icon-large"></i>&nbsp;Inventory List<i class="icon-arrow-right icon-large"></i></a></li>
+									<li><a href="note.php"><i class="icon-file icon-large"></i>&nbsp;Announcements<i class="icon-arrow-right icon-large"></i></a></li>
 								</ul>
 							</div>

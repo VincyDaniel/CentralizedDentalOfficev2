@@ -79,12 +79,6 @@
 			</div>
 		</div>
 		<div class="control-group">
-			<label class="control-label" for="inputPassword">Middlename</label>
-			<div class="controls">
-			<input type="text" name="middlename" id="inputPassword" value="<?php echo $member_row['middlename']; ?>" placeholder="Middlename" required>
-			</div>
-		</div>
-		<div class="control-group">
 			<label class="control-label" for="inputPassword">Address</label>
 			<div class="controls">
 			<input type="text" name="address" value="<?php echo $member_row['address']; ?>" id="inputPassword" placeholder="Address" required>
@@ -123,13 +117,12 @@
 	if (isset($_POST['update'])){
 	$firstname = $_POST['firstname'];
 	$lastname = $_POST['lastname'];
-	$middlename = $_POST['middlename'];
 	$address = $_POST['address'];
 	$age = $_POST['age'];
 	$gender = $_POST['gender'];
 	$email = $_POST['email'];
 		
-	mysqli_query($conn,"update members set firstname='$firstname' , lastname='$lastname' , middlename='$middlename' , address='$address' ,
+	mysqli_query($conn,"update members set firstname='$firstname' , lastname='$lastname' , address='$address' ,
 	age='$age' , gender='$gender' , email='$email' where member_id='$session_id' ") or die(mysqli_error($conn));
 	?>
 	<script>
