@@ -26,7 +26,7 @@
                             
                                 <thead>
                                     <tr>
-                                        <th>Number</th>
+                                        <th>Member ID</th>
                                         <th>Member</th>
                                         <th>Date</th>                                 
                                         <th>Service</th>                                 
@@ -51,7 +51,7 @@
 									?>
 									
 									 <tr class="del<?php echo $id ?>">
-									 <td><?php  echo $row['Number'];  ?></td>
+									 <td><?php  echo $row['member_id'];  ?></td>
                                     <td><?php echo $member_row['firstname']." ".$member_row['lastname']; ?></td> 
                                     <td><?php  echo $row['date'];  ?></td> 
                                     <td><?php  echo $service_row['service_offer'];  ?></td> 

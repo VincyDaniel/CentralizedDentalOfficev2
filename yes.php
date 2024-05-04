@@ -17,8 +17,8 @@
 				 <div class="alert alert-success">
                         <i class="icon-calendar icon-large"></i>
                         <?php
-                        $Today = date('d:m:y');
-                        $new = date('l, F d, Y', strtotime($Today));
+                        $Today = date('y:m:d');
+                        $new = date(' d/m/Y', strtotime($Today));
                         echo $new;
                         ?>
                     </div>		
