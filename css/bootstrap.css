@@ -3164,8 +3164,6 @@ button.close {
 .login_sign_up {
   position: absolute;
   top: 28%; /* Adjust as needed */
-  right: 50%; /* Adjust as needed */
-  transform: translate(-175%, 0); /* Adjust horizontal positioning */
   align-items: center; /* Center vertically */
 }
 
@@ -3175,12 +3173,11 @@ button.close {
   padding: 4px 12px;
   font-size: 14px;
   line-height: 20px;
-  color: #333333;
+  color: #000000;
   text-align: center;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
   vertical-align: middle;
   cursor: pointer;
-  background-color: #C9BB8E; /* Change background color to #C9BB8E */
   border: 1px solid #cccccc;
   border-color: #e6e6e6 #e6e6e6 #bfbfbf;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
@@ -3464,20 +3461,22 @@ input[type="button"].btn-block {
 }
 
 .btn-info {
-  color: #ffffff;
+  color: #3c5a7b;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #49afcd;
-  *background-color: #2f96b4;
-  background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#2f96b4));
-  background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4);
-  background-image: -o-linear-gradient(top, #5bc0de, #2f96b4);
-  background-image: linear-gradient(to bottom, #5bc0de, #2f96b4);
+  background-color: #ffffff; /* Changed to white */
+  *background-color: #f2f2f2; /* Close to white */
+  background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2); /* Gradient to close to white */
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f2f2f2)); /* Gradient to close to white */
+  background-image: -webkit-linear-gradient(top, #ffffff, #f2f2f2); /* Gradient to close to white */
+  background-image: -o-linear-gradient(top, #ffffff, #f2f2f2); /* Gradient to close to white */
+  background-image: linear-gradient(to bottom, #ffffff, #f2f2f2); /* Gradient to close to white */
   background-repeat: repeat-x;
-  border-color: #2f96b4 #2f96b4 #1f6377;
+  border-color: #f2f2f2 #f2f2f2 #ddd; /* Close to white */
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff2f96b4', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  font-family: 'Poppins', sans-serif; /* Set font-family to Poppins */
+  font-weight: bold;
 }
 
 .btn-info:hover,
@@ -3486,14 +3485,14 @@ input[type="button"].btn-block {
 .btn-info.active,
 .btn-info.disabled,
 .btn-info[disabled] {
-  color: #ffffff;
-  background-color: #2f96b4;
-  *background-color: #2a85a0;
+  color: #3c5a7b;
+  background-color: #f2f2f2; /* Close to white */
+  *background-color: #e5e5e5; /* A bit darker than white */
 }
 
 .btn-info:active,
 .btn-info.active {
-  background-color: #24748c \9;
+  background-color: #ffffff \9; /* Changed to white */
 }
 
 .btn-inverse {
@@ -6018,32 +6017,6 @@ a.badge:focus {
 .carousel-indicators .active {
   background-color: #fff;
 }
-
-.carousel-caption {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 15px;
-  background: #333333;
-  background: rgba(0, 0, 0, 0.75);
-}
-
-.carousel-caption h4,
-.carousel-caption p {
-  line-height: 20px;
-  color: #ffffff;
-}
-
-.carousel-caption h4 {
-  margin: 0 0 5px;
-}
-
-.carousel-caption p {
-  margin-bottom: 0;
-}
-
-
 
 .hero-unit {
   padding: 60px;

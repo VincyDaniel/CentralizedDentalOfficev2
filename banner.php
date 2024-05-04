@@ -3,7 +3,7 @@
   <div class="content-wrapper" style="margin-top: 700px;">
 	<div class="login_sign_up">
 		<a rel="tooltip"  data-placement="left" id="login" href="login.php"  class="btn btn-info btn-large"></i>&nbsp;Login</a>
-		<p><a rel="tooltip"  data-placement="bottom" title="Click Here to Sign UP" id="signup" href="signup.php">Not a Member? Sign Up Now</a></p>
+		<p><a rel="tooltip"  data-placement="bottom" id="signup" href="signup.php">Not a Member? Sign Up Now</a></p>
 	</div>
 	<div class ="masthead" style="background-image: url('backgroundhighstop.png');">
 	</div>
@@ -19,11 +19,14 @@
 							<!-- Carousel items -->
 							<div class="carousel-inner">
 							<div class="active item">
-							<img src="img/slide.jpg">
-								<div class="carousel-caption"><h3>Schedule Your Appointment Online</h3></div>
+							<img src="img/carousel1.png">
 								</div>
-							<div class="item">…</div>
-							<div class="item">…</div>
+							<div class="item">
+							<img src="img/carousel2.png">
+								</div>
+							<div class="item">
+							<img src="img/carousel3.png">
+								</div>
 							</div>
 							<!-- Carousel nav -->
 							<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
