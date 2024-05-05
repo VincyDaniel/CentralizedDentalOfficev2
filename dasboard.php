@@ -17,8 +17,9 @@
 				 <div class="alert alert-success">
                         <i class="icon-calendar icon-large"></i>
                         <?php
+						date_default_timezone_set('Asia/Manila');
                         $Today = date('y:m:d');
-                        $new = date(' d/m/Y', strtotime($Today));
+                        $new = date(' d/m/Y');
                         echo $new;
                         ?>
                     </div>		

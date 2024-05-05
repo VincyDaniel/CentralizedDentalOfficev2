@@ -57,12 +57,10 @@
                                     <td><?php  echo $service_row['service_offer'];  ?></td> 
                                     <td><?php  echo $service_row['price'];  ?></td> 
                                     <td><?php  echo $row['status'];  ?></td> 
-                                    <td width="100">
+                                    <td width="140">
 									
-									<?php
-                                     /*    <a href="#delete<?php echo $id ?>" data-toggle="modal" rel="tooltip"  title="Delete" id="<?php echo $id; ?>" class="btn btn-danger"><i class="icon-trash icon-large"></i></a>
-										<?php include('delete_schedule.php'); ?> */
-										?>
+                                      <a href="#delete<?php echo $id ?>" data-toggle="modal" rel="tooltip"  title="Delete" id="<?php echo $id; ?>" class="btn btn-danger"><i class="icon-trash icon-large"></i></a>
+										<?php include('delete_schedule.php');?>
 									   <a rel="tooltip"  title="Edit" id="e<?php echo $id; ?>" href="#edit<?php echo $id; ?>" data-toggle="modal" class="btn btn-success"><i class="icon-pencil icon-large"></i></a>
 									   <a  href="update.php<?php echo '?id='.$id; ?>"  class="btn btn-info"><i class="icon-check icon-large"></i></a>
                                     <?php include('edit_service.php'); ?>
