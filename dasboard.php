@@ -202,6 +202,7 @@
                             </table>
 	
 	
+<<<<<<< Updated upstream
 			</div>
 <!-- COPY TO HERE -->
 
@@ -234,6 +235,38 @@
 				
 			</div>
 <!-- COPY TO HERE -->
+=======
+			</div>
+<!-- COPY TO HERE -->
+
+<!-- COPY FROM HERE -->
+			<div class="span3">
+					<div class="alert alert-danger">NOTE</div>
+									
+								
+									<?php 
+									$note_query = mysqli_query($conn,"select * from note ")or die(mysqli_error($conn));
+									$note_count =mysqli_num_rows($note_query);
+									while($note_row = mysqli_fetch_array($note_query)){
+									if ($note_count > 0){ ?>
+									
+									<li><i class="icon-stop icon-large"></i>&nbsp;<?php echo $note_row['message'] ?></li>
+									<?php
+									}  } 
+									?>
+									<br>
+					<div class="alert alert-info">Office Location</div>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d289.0221401614459!2d121.09793143743784!3d14.620298506877687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b839412463cf%3A0x7bd41f4ed257b291!2sMunding%20Ave%2C%20Marikina%2C%201800%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1714754844972!5m2!1sen!2sph" width="270" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					
+					
+				<div class="alert alert-info">Testimonial</div>
+				<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmary.g.cruz.9%2Fposts%2Fpfbid0SyaPzCRF8cTnedx3xLgQygrYiE2No9HofF9yKjLEkCPd2V851ZHdim4DXhNFQPxGl&show_text=true&width=500&is_preview=true" width="270" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+				<div class="alert alert-info">Social Media</div>
+				<a href="https://www.facebook.com/profile.php?id=100057238428144"><img src="img/32x32/facebook.png"></a>	
+				</div>
+			</div>
+<!-- COPY TO HERE -->
+>>>>>>> Stashed changes
 		</div>
     </div>
 <?php include('footer.php') ?>
