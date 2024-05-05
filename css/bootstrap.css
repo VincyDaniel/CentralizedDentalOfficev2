@@ -675,6 +675,19 @@ cite {
   font-style: normal;
 }
 
+.masthead {
+  background-image: url('set.png');
+	background-size: cover;
+	min-height:60vh;
+  height: 570px; /* Adjust height to match previous margin-top value */
+	position: absolute;
+	left: 0;
+	top: 20px;
+	width: 100%;
+	z-index: -1;
+	padding-top: 104px;
+}
+
 .muted {
   color: #999999;
 }
