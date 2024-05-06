@@ -3176,8 +3176,8 @@ button.close {
 
 .login_sign_up {
   position: absolute;
-  top: 28%; /* Adjust as needed */
-  align-items: center; /* Center vertically */
+  left: 105%;
+  bottom: 5px;
 }
 
 .btn {
@@ -3207,13 +3207,13 @@ button.close {
 }
 
 #signup {
-  color: #000000; /* Black color for the sign-up link */
+  color: #ffffff; /* Black color for the sign-up link */
   text-decoration: none;
-  margin-left: 5px; /* Add margin for spacing */
+  margin-right: 25px; /* Add margin for spacing */
 }
 
 #signup:hover {
-  color: #000000; /* Hover color */
+  color: #fffff; /* Hover color */
 }
 
 .btn:hover,
@@ -6078,4 +6078,116 @@ a.badge:focus {
 
 .affix {
   position: fixed;
+}
+
+/* Style for Collection Section */
+
+.title h2 {
+  color: #333; /* Set title color */
+  font-size: 3rem;
+  font-family: 'Poppins', sans-serif; /* Set font-family to Poppins */
+}
+
+.collection-list {
+  display: grid; /* Use CSS grid */
+  grid-template-columns: repeat(4, minmax(120px, 1fr)); /* Dynamic columns */
+  gap: 20px; /* Gap between items */
+}
+
+.collection-list > :first-child {
+  grid-column: 1 / span 1; /* Set the first item to span 1 column */
+}
+
+.collection-list .collection-img {
+  overflow: hidden; /* Hide overflowing content */
+  border-radius: 20px; /* Add border radius */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+  position: relative; /* Set position to relative */
+  transition: transform 0.3s ease; /* Add transition */
+}
+
+.collection-list img {
+  width: 100%;
+  height: auto;
+}
+
+.collection-list .collection-img::before {
+  content: ''; /* Add pseudo-element */
+  position: absolute; /* Set position to absolute */
+  top: 0; /* Position from top */
+  left: 0; /* Position from left */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  opacity: 0; /* Start with 0 opacity */
+  transition: opacity 0.3s ease; /* Add transition */
+}
+
+.collection-list .collection-img:hover::before {
+  opacity: 1; /* Change opacity on hover */
+}
+
+.collection-list img:hover {
+  transform: scale(1.05); /* Scale up image on hover */
+}
+
+.rating .text-primary {
+  color: #ffc107; /* Set star color */
+}
+
+.text-center p {
+  font-size: 1.1rem; /* Set product name font size */
+  margin-bottom: 5px; /* Add bottom margin */
+}
+
+.text-center .fw-bold {
+  font-size: 1.2rem; /* Set price font size */
+}
+
+.filter-button-group .btn {
+  border: 1px solid #007bff; /* Set button border */
+  color: #007bff; /* Set button text color */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Add smooth transition */
+}
+
+.filter-button-group .btn.active-filter-btn {
+  background-color: #007bff; /* Set active button background color */
+  color: #fff; /* Set active button text color */
+}
+
+.filter-button-group .btn:hover {
+  background-color: #007bff; /* Set button background color on hover */
+  color: #fff; /* Set button text color on hover */
+}
+
+/* animation */
+
+.animation {
+  animation-duration: 1s; /* Set animation duration */
+  animation-fill-mode: both; /* Apply animation styles before and after animation */
+}
+
+@keyframes fadeInTop {
+  0% {
+      opacity: 0;
+      transform: translateY(-50px); /* Move element up */
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0); /* Move element back to its original position */
+  }
+}
+
+.fadeInTop {
+  animation-name: fadeInTop; /* Apply fadeInTop animation */
+}
+
+.decorative-bar-vertical {
+  width: 6px; /* Adjust the width as needed */
+  height: 50px; /* Adjust the height as needed */
+  background-color: #007bff; /* Set the color of the bar */
+  display: inline-block;
+  margin-right: 10px; /* Adjust the spacing between the bar and the text */
+  position: relative;
+  top: 6px; /* Adjust the vertical position of the bar */
 }

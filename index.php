@@ -15,6 +15,12 @@
 								<li><a rel="tooltip"  data-placement="bottom" title="Services" id="services" href="services.php" class=""><i class="icon-list icon-large"></i>&nbsp;Services</a></li>
 								<li><a rel="tooltip"  data-placement="bottom" title="About Us" id="aboutus" href="about.php" class=""><i class="icon-info icon-large"></i>&nbsp;About Us</a></li>
 								<li><a rel="tooltip"  data-placement="bottom" title="Contact Us" id="contactus" href="contact_us.php" class=""><i class="icon-phone icon-large"></i>&nbsp;Contact US</a></li>
+								<li>
+									<div class="login_sign_up">
+									<a rel="tooltip"  data-placement="bottom" id="login" href="login.php"  class="btn btn-info btn-large"></i>&nbsp;Login</a>
+									<p><a rel="tooltip"  data-placement="bottom" id="signup" href="signup.php">Not a Member? Sign Up Now</a></p>
+								</li>
+						</div>
 							</ul>
 						</div>
 					</div>
@@ -29,9 +35,6 @@
 				<div class="span12">
 				<?php include('banner.php'); ?>
 				</div>
-				<div class="span12">
-				<div class="caption_index">we provide the best quality dental service</div>
-				</div>		
 				<div class="clearfix"></div>
 				<div class="span12">
 					<?php include('thumbnail.php'); ?>

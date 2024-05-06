@@ -10,6 +10,7 @@
 			<link href="css/docs.css" rel="stylesheet" media="screen">
 			<link href="css/diapo.css" rel="stylesheet" media="screen">
 			<link href="css/font-awesome.css" rel="stylesheet" media="screen">
+			
 	<!-- js -->			
     <script src="js/jquery-1.7.2.min.js"></script>
     <script src="js/bootstrap.js"></script>
