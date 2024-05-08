@@ -2,10 +2,113 @@
 <?php include('session.php'); ?>
 <?php include('dbcon.php'); ?>
 <?php include('navbar_dasboard.php'); ?>
-    <div class="container">
+<style>
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    padding: 12px 16px;
+}
+
+th {
+    background-color: #4e8cff;
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #e7f0ff;
+}
+
+tr:hover {
+    background-color: #d2e4ff;
+}
+
+.image-container {
+    border: 4px solid #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.alert-info,
+.alert-success,
+.alert-danger {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.alert-info {
+    border: 2px solid #4e8cff;
+    color: #004085;
+    background-color: #e7f0ff;
+}
+
+.alert-success {
+    border: 2px solid #28a745;
+    color: #155724;
+    background-color: #d4edda;
+    font-weight: bold;
+}
+
+.alert-danger {
+    border: 2px solid #dc3545;
+    color: #721c24;
+    background-color: #f8d7da;
+    font-weight: bold;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f4f8;
+    padding: 20px;
+}
+
+.btn-info {
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    color: #ffffff;
+    padding: 12px 24px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.btn-info:hover {
+    border-color: #ffffff;
+}
+
+.icon-large {
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+
+</style>   
+
+<div class="container">
 		<div class="margin-top">
 			<div class="row">
 				
+<<<<<<< Updated upstream
 			<div class="span3" style="background-image: url('set2.png');">
 							<ul class="nav nav-tabs nav-stacked">
 							<li class="active">
@@ -13,6 +116,9 @@
 					
 						</ul>
 						<p><strong>Today is:</strong></p>
+=======
+			<div class="span3">
+>>>>>>> Stashed changes
 				 <div class="alert alert-success">
                         <i class="icon-calendar icon-large"></i>
                         <?php
@@ -94,7 +200,10 @@
 				</div>
 				<div class="span6">
 				
-					
+				<div class="image-container">
+    				<img src="img/dr.jpg" alt="Aesthetic Image">
+				</div>
+				<br>
 				<div class="alert alert-info">Edit Personal Information</div>
 	<?php 
 	$member_query = mysqli_query($conn,"select * from members where member_id='$session_id'")or die(mysqli_error($conn));
@@ -153,27 +262,8 @@
 			</div>
 		</div>
     </form>
-	
-	<?php
-	if (isset($_POST['update'])){
-	$firstname = $_POST['firstname'];
-	$lastname = $_POST['lastname'];
-	$middlename = $_POST['middlename'];
-	$address = $_POST['address'];
-	$age = $_POST['age'];
-	$gender = $_POST['gender'];
-	$email = $_POST['email'];
-		
-	mysqli_query($conn,"update members set firstname='$firstname' , lastname='$lastname' , middlename='$middlename' , address='$address' ,
-	age='$age' , gender='$gender' , email='$email' where member_id='$session_id' ") or die(mysqli_error($conn));
-	?>
-	<script>
-	window.location = 'edit_info.php'; 
-	</script>
-	<?php
-	}	
-	?>
 
+<<<<<<< Updated upstream
 <div class="alert alert-info">Current Schedule</div>
 	<table class="table  table-bordered">
 										
@@ -212,6 +302,11 @@
 	
 	
 				</div>
+=======
+	
+	
+			</div>
+>>>>>>> Stashed changes
 				<div class="span3">
 					<div class="alert alert-danger">NOTE</div>
 									
@@ -236,7 +331,10 @@
 				<div class="alert alert-info">Social Media</div>
 				<a href="https://www.facebook.com/profile.php?id=100057238428144"><img src="img/32x32/facebook.png"></a>	
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 				<div class="alert alert-info">Dr. Terry Lee</div>	
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 				</div>
