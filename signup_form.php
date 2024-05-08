@@ -33,6 +33,7 @@
                 <label class="control-label" for="inputEmail">Name</label>
                 <div class="controls">
                     <input type="text" name="firstname" value="<?php if (isset($_POST['submit'])){echo $firstname;} ?>" placeholder="Firtname" required> 
+                    <br>
                     <input type="text" name="lastname"  value="<?php if (isset($_POST['submit'])){echo $lastname;} ?>" placeholder="Lastname" required>  
                 </div>
             </div>
