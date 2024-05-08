@@ -2,120 +2,22 @@
 <?php include('session.php'); ?>
 <?php include('dbcon.php'); ?>
 <?php include('navbar_dasboard.php'); ?>
-
-<style>
-table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: #ffffff;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-th, td {
-    border: 1px solid #dddddd;
-    padding: 12px 16px;
-}
-
-th {
-    background-color: #4e8cff;
-    color: #ffffff;
-}
-
-tr:nth-child(even) {
-    background-color: #e7f0ff;
-}
-
-tr:hover {
-    background-color: #d2e4ff;
-}
-
-.image-container {
-    border: 4px solid #ffffff;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-}
-
-.image-container img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.alert-info,
-.alert-success,
-.alert-danger {
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.alert-info {
-    border: 2px solid #4e8cff;
-    color: #004085;
-    background-color: #e7f0ff;
-}
-
-.alert-success {
-    border: 2px solid #28a745;
-    color: #155724;
-    background-color: #d4edda;
-    font-weight: bold;
-}
-
-.alert-danger {
-    border: 2px solid #dc3545;
-    color: #721c24;
-    background-color: #f8d7da;
-    font-weight: bold;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #e8f4f8;
-    padding: 20px;
-}
-
-.btn-info {
-    display: inline-block;
-    font-weight: bold;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    border: 2px solid #ffffff;
-    border-radius: 20px;
-    color: #ffffff;
-    padding: 12px 24px;
-    text-decoration: none;
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-}
-
-.btn-info:hover {
-    border-color: #ffffff;
-}
-
-.icon-large {
-    font-size: 20px;
-    margin-right: 8px;
-}
-
-
-</style>
-
-<div class="container">
+    <div class="container">
 		<div class="margin-top">
 			<div class="row">
-<!-- COPY FROM HERE -->
-			<div class="span3">
+				
+			<div class="span3" style="background-image: url('set2.png');">
+							<ul class="nav nav-tabs nav-stacked">
+							<li class="active">
+							</li>
+					
+						</ul>
+						<p><strong>Today is:</strong></p>
 				 <div class="alert alert-success">
                         <i class="icon-calendar icon-large"></i>
                         <?php
-						date_default_timezone_set('Asia/Manila');
-                        $Today = date('y:m:d');
-                        $new = date(' d/m/Y');
+                        $Today = date('d:m:y');
+                        $new = date('l, F d, Y', strtotime($Today));
                         echo $new;
                         ?>
                     </div>
@@ -190,79 +92,82 @@ body {
 							</tbody>
 							</table>
 				</div>
-<!-- COPY TO HERE -->
 				<div class="span6">
-				<div class="image-container">
-    				<img src="img/dr.jpg" alt="Aesthetic Image">
-				</div>
-					<br>
-				<div class="alert alert-info">Select Date of Appointment and Service Offer</div>
-	
-		<!-- reservation -->
-		<?php
-		if (isset($_POST['sub'])){
-		$date = $_POST['date'];
-		$service = $_POST['service'];
-		
-		$query = mysqli_query($conn,"select * from schedule where date = '$date' and member_id = '$session_id' ")or die(mysqli_error($conn));
-		$count = mysqli_num_rows($query);
-	/* 	echo $count; */
-		if ($count  > 0){ ?>
-		<script>
-		alert('You have already schedule on this date');
-		</script>
-		<?php
-		}else{
-		$equal = $count + 1 ;
-		
-
-		?>
-		<div class="question">
-		<div class="alert alert-success">Your the number <strong><?php echo $equal; ?></strong> client in this date <strong><?php echo  $date; ?></strong></div>
-		<form method="POST" action="yes.php">
-		<input type="hidden" name="session_id" value="<?php echo $session_id; ?>" >
-		<input type="hidden" name="date1" value="<?php echo $date; ?>" >
-		<input type="hidden" name="service1" value="<?php echo $service; ?>" >
-		<input type="hidden" name="equal" value="<?php echo $equal; ?>" >
-		<p>Are you sure you want to set your Appointment on this date?</p>
-		<button name="yes" class="btn btn-success"><i class="icon-check icon-large"></i>&nbsp;Yes</button> &nbsp;  <a href="dasboard.php" class="btn"><i class="icon-remove"></i>&nbsp;No</a>
-		</form>
-	
+				
+					
+				<div class="alert alert-info">Edit Personal Information</div>
+	<?php 
+	$member_query = mysqli_query($conn,"select * from members where member_id='$session_id'")or die(mysqli_error($conn));
+	$member_row= mysqli_fetch_array($member_query);
+	?>
+	 <form class="form-horizontal" method="POST">
+		<div class="control-group">
+			<label class="control-label" for="inputEmail">Firstname</label>
+			<div class="controls">
+			<input type="text" value="<?php echo $member_row['firstname']; ?>" name="firstname" id="inputEmail" placeholder="Firstname" required>
+			</div>
 		</div>
-		<br>
-		<?php }}   ?>
-	<!-- end reservation -->
-	
-	<form class="form-horizontal" method="POST">
-    <div class="control-group">
-    <label class="control-label" for="inputEmail">Date</label>
-    <div class="controls">
-    <input type="text"  class="w8em format-d-m-y highlight-days-67 range-low-today" name="date" id="sd" maxlength="10" style="border: 3px double #CCCCCC;" required/>
-    </div>
-    </div>
-    <div class="control-group">
-    <label class="control-label" for="inputPassword">Service</label>
-    <div class="controls">
-		<select name="service" required>
-			<option></option>
-		<?php $query=mysqli_query($conn,"select * from service")or die(mysqli_error($conn));
-		while($row=mysqli_fetch_array($query)){
-		?>
-	
-		<option value="<?php echo $row['service_id']; ?>"><?php echo $row['service_offer'] ?></option>
-		<?php } ?>
-		</select>
-    </div>
-    </div>
-    <div class="control-group">
-    <div class="controls">
-    <button type="submit" name="sub" class="btn btn-info"><i class="icon-check icon-large"></i>&nbsp;Submit</button>
-    </div>
-    </div>
+		<div class="control-group">
+			<label class="control-label" for="inputPassword">Lastname</label>
+			<div class="controls">
+			<input type="text" name="lastname" id="inputPassword" placeholder="Lastname" value="<?php echo $member_row['lastname']; ?>" required>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="inputPassword">Address</label>
+			<div class="controls">
+			<input type="text" name="address" value="<?php echo $member_row['address']; ?>" id="inputPassword" placeholder="Address" required>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="inputPassword">Email</label>
+			<div class="controls">
+			<input type="text" name="email" id="inputPassword" value="<?php echo $member_row['email']; ?>" placeholder="Email" required>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="inputPassword">Age</label>
+			<div class="controls">
+			<input type="text" name="age" class="span1" value="<?php echo $member_row['age']; ?>" id="inputPassword" placeholder="Age" required>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="inputPassword">Gender</label>
+			<div class="controls">
+			<select class="span2" name="gender" required>
+			<option><?php echo $member_row['gender']; ?></option>
+			<option>Male</option>
+			<option>Female</option>
+			</select>
+			</div>
+		</div>
+		<div class="control-group">
+			<div class="controls">
+			<button type="submit" name="update" class="btn btn-success"><i class="icon-pencil"></i>&nbsp;Update</button>
+			</div>
+		</div>
     </form>
+	
+	<?php
+	if (isset($_POST['update'])){
+	$firstname = $_POST['firstname'];
+	$lastname = $_POST['lastname'];
+	$address = $_POST['address'];
+	$age = $_POST['age'];
+	$gender = $_POST['gender'];
+	$email = $_POST['email'];
+		
+	mysqli_query($conn,"update members set firstname='$firstname' , lastname='$lastname' , address='$address' ,
+	age='$age' , gender='$gender' , email='$email' where member_id='$session_id' ") or die(mysqli_error($conn));
+	?>
+	<script>
+	window.location = 'edit_info.php'; 
+	</script>
+	<?php
+	}	
+	?>
 
-<!-- COPY FROM HERE -->
-	<div class="alert alert-info">Your Current Schedule</div>
+<div class="alert alert-info">Current Schedule</div>
 	<table class="table  table-bordered">
 										
 										<thead>
@@ -274,12 +179,7 @@ body {
 										</thead>
 										<tbody>
 										
-										<?php 
-								    
-									$new = date('d/m/Y');
-							
-						
-									$user_query=mysqli_query($conn,"select * from schedule where date  like  '%$new%' ")or die(mysqli_error($conn));
+										<?php $user_query=mysqli_query($conn,"select * from schedule")or die(mysqli_error($conn));
 									while($row=mysqli_fetch_array($user_query)){
 									$id=$row['id'];
 									$member_id = $row['member_id'];
@@ -301,13 +201,11 @@ body {
                                 </tbody>
                             </table>
 	
+
 	
-
-			</div>
-<!-- COPY TO HERE -->
-
-<!-- COPY FROM HERE -->
-			<div class="span3">
+	
+				</div>
+				<div class="span3">
 					<div class="alert alert-danger">NOTE</div>
 									
 								
@@ -330,12 +228,9 @@ body {
 				<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmary.g.cruz.9%2Fposts%2Fpfbid0SyaPzCRF8cTnedx3xLgQygrYiE2No9HofF9yKjLEkCPd2V851ZHdim4DXhNFQPxGl&show_text=true&width=500&is_preview=true" width="270" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 				<div class="alert alert-info">Social Media</div>
 				<a href="https://www.facebook.com/profile.php?id=100057238428144"><img src="img/32x32/facebook.png"></a>	
-				<div class="alert alert-info">Dr. Terry Lee</div>	
 				</div>
-
+				
 			</div>
-<!-- COPY TO HERE -->
-
 		</div>
     </div>
 <?php include('footer.php') ?>

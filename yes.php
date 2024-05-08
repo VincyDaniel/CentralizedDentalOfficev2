@@ -108,17 +108,7 @@ body {
 		<div class="margin-top">
 			<div class="row">
 				
-<<<<<<< Updated upstream
-			<div class="span3" style="background-image: url('set2.png');">
-							<ul class="nav nav-tabs nav-stacked">
-							<li class="active">
-							</li>
-					
-						</ul>
-						<p><strong>Today is:</strong></p>
-=======
 			<div class="span3">
->>>>>>> Stashed changes
 				 <div class="alert alert-success">
                         <i class="icon-calendar icon-large"></i>
                         <?php
@@ -227,11 +217,7 @@ body {
 
 
 	
-<<<<<<< Updated upstream
-	<div class="alert alert-info">Current Schedule</div>
-=======
 	<div class="alert alert-info">Your Current Schedule</div>
->>>>>>> Stashed changes
 	<table class="table  table-bordered">
 										
 										<thead>
@@ -243,16 +229,12 @@ body {
 										</thead>
 										<tbody>
 										
-<<<<<<< Updated upstream
-										<?php $user_query=mysqli_query($conn,"select * from schedule")or die(mysqli_error($conn));
-=======
 										<?php 
 								    
 									$new = date('d/m/Y');
 							
 						
 									$user_query=mysqli_query($conn,"select * from schedule where date  like  '%$new%' ")or die(mysqli_error($conn));
->>>>>>> Stashed changes
 									while($row=mysqli_fetch_array($user_query)){
 									$id=$row['id'];
 									$member_id = $row['member_id'];
@@ -274,12 +256,8 @@ body {
                                 </tbody>
                             </table>
 	
-<<<<<<< Updated upstream
-				</div>
-=======
 	
 			</div>
->>>>>>> Stashed changes
 				<div class="span3">
 					<div class="alert alert-danger">NOTE</div>
 									
@@ -302,16 +280,14 @@ body {
 				<div class="alert alert-info">Testimonial</div>
 				<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmary.g.cruz.9%2Fposts%2Fpfbid0SyaPzCRF8cTnedx3xLgQygrYiE2No9HofF9yKjLEkCPd2V851ZHdim4DXhNFQPxGl&show_text=true&width=500&is_preview=true" width="270" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 				<div class="alert alert-info">Social Media</div>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
 				<a href="https://www.facebook.com/profile.php?id=100057238428144"><img src="img/32x32/facebook.png"></a>	
 				<div class="alert alert-info">Dr. Terry Lee</div>	
-=======
+
 				<a href="https://www.facebook.com/profile.php?id=100057238428144"><img src="img/32x32/facebook.png"></a>		
->>>>>>> Stashed changes
-=======
+
 				<a href="https://www.facebook.com/profile.php?id=100057238428144"><img src="img/32x32/facebook.png"></a>		
->>>>>>> Stashed changes
+
 				</div>
 				
 			</div>
