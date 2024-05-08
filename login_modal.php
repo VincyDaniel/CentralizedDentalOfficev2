@@ -1,5 +1,6 @@
    
-<div class="alert alert-info">Please Enter The Details Below</div>
+<br><br><br>
+<div class="alert alert-info text-center"> Please Enter The Details Below</div>
 <div class="lgoin_terry">
 <form method="post" class="form-horizontal">
 		<div class="control-group">

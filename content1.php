@@ -1,6 +1,61 @@
-	<div class="text_content">
-					<p>
-	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum. Suspendisse vulputate aliquam dui. Nulla elementum dui ut augue. Aliquam vehicula mi at mauris. Maecenas placerat, nisl at consequat rhoncus, sem nunc gravida justo, quis eleifend arcu velit quis lacus. Morbi magna magna, tincidunt a, mattis non, imperdiet vitae, tellus. Sed odio est, auctor ac, sollicitudin in, consequat vitae, orci. Fusce id felis. Vivamus sollicitudin metus eget eros.
+<section id="special" class="py-5">
+    <div class="container">
+        <div class="title text-center py-5">
+            <h2 class="position-relative d-inline-block animation fadeInTop">
+			<span class="decorative-bar-vertical"></span> Our Content
+			</h2>
+        </div>
 
-					</p>
-					</div>
+        <br><br>
+
+        <div class="row g-0">
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
+                <div class="special-img position-relative overflow-hidden">
+                    <a href="services.php">
+                        <img src="img/thumbnails/servicespage.png" alt="services" class="w-100">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
+                <div class="special-img position-relative overflow-hidden">
+                    <a href="proj_product_mugs.html">
+                        <img src="img/thumbnails/xraypage.png" alt="cephalometric" class="w-100">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 sale">
+                <div class="special-img position-relative overflow-hidden">
+                    <a href="proj_product_earrings.html">
+                        <img src="img/thumbnails/dentalpage.png" alt="occlusal xray" class="w-100">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 sale">
+                <div class="special-img position-relative overflow-hidden">
+                    <a href="proj_product_pots.html">
+                        <img src="img/thumbnails/healthpage.png" alt="Naia" class="w-100">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class="special-img position-relative overflow-hidden">
+                    <a href="about.php">
+                        <img src="img/thumbnails/aboutpage.png" alt="Shimmering" class="w-100">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class="special-img position-relative overflow-hidden">
+                    <a href="contact_us.php">
+                        <img src="img/thumbnails/contactpage.png" alt="Design 6" class="w-100">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

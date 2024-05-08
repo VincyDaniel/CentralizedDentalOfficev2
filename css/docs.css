@@ -589,34 +589,6 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 }
 
 
-
-/* Footer
--------------------------------------------------- */
-
-.footer {
-  text-align: center;
-  padding: 20px 0;
-  margin-top: 10px;
-  border-top: 1px solid #e5e5e5;
-  background-color:#3398cc;
-}
-.footer p {
-  margin-bottom: 0;
-  color: #777;
-}
-.footer-links {
-  margin: 10px 0;
-}
-.footer-links li {
-  display: inline;
-  padding: 0 2px;
-}
-.footer-links li:first-child {
-  padding-left: 0;
-}
-
-
-
 /* Special grid styles
 -------------------------------------------------- */
 
@@ -1351,11 +1323,5 @@ form.bs-docs-example {
     right: auto;
     bottom: auto;
     left: auto;
-  }
-
-  /* Tighten up footer */
-  .footer {
-    padding-top: 20px;
-    padding-bottom: 20px;
   }
 }
