@@ -2,15 +2,15 @@
     <div class="navbar-inner">
 <div class="pull-right">
     <ul class="nav">
-    <li><a href="#"><div class="icon_size"><i class="icon-user icon-large"></i>&nbsp;&nbsp;Good Day Admin</div></a></li>
-		<li class="divider-vertical"></li>
     <li><a href="dasboard.php"><div class="icon_size"><i class="icon-home icon-large"></i></div></a></li>
+		<li class="divider-vertical"></li>
+    <li><a href="#"><div class="icon_size"><i class="icon-user icon-large"></i></div></a></li>
 		<li class="divider-vertical"></li>
 	<li>
 	
     <div class="btn-group">
     <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-	<i class="icon-cog icon-large"></i>
+	<i class="icon-cog icon-large" style="color: #c9c6c6;"></i>
     <span class="caret"></span>
     </a>
     <ul class="dropdown-menu">

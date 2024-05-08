@@ -1,17 +1,18 @@
 <?php include('header.php'); ?>
 <?php include('session.php'); ?>
-    <div class="container">
-
-	<div class="row">	
-						<div class="span3">
+<div style="display: flex; flex-direction: column;">
+    <div style="display: flex;">
+        <div style="flex: 0 0 auto; width: 270px; margin-left: 40px;"> <!-- Sidebar with left margin -->
 						<?php include('sidebar.php'); ?>
 						</div>
-						<div class="span9">
-							<img src="../img/dr.jpg" class="img-rounded">
+						<div style="width: 20px;"></div>
+                            <div style="flex: 1;"> <!-- Content -->
+                            <img src="../img/dr.jpg" class="img-rounded" style="width: 409px; height: 115px;">
+                            <div style="margin-right: 40px;"> <!-- Navbar with right margin -->
 								<?php include('navbar_dasboard.php') ?>
+                                <br>
 						    <div class="alert alert-info">
-                                    <button type="button" class="close" data-dismiss="alert">&times;</button>
-                                    <strong><i class="icon-user icon-large"></i>&nbsp;Users Table</strong>
+                                    <strong><i class="icon-file icon-large"></i>&nbsp;Announcement Table</strong>
                             </div>
 							
 							<?php include('add_note.php'); ?>
@@ -47,4 +48,5 @@
 
 
 						</div>
+                        <br><br>
     </div>

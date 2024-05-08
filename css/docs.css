@@ -112,15 +112,15 @@ font-weight:bold;
 .navbar {
 	*position: relative;
 	*z-index: 2;
-	margin-bottom: 20px;
+	margin-bottom: 0px;
 	overflow: visible;
 }
 
 .navbar-inner {
 	min-height: 40px;
-	padding-right: 20px;
+	padding-right: 0px;
 	padding-left: 20px;
-	background-color: #3dccf8;
+	background-color: #2596be;
 }
 .login{
    background-color: #32a5d4;

@@ -51,13 +51,14 @@
 										</div>
 									</div>
 								</div>
+								<br>
 								<ul class="nav nav-tabs nav-stacked">														
-									<li><a href="schedule.php"><i class="icon-list icon-large"></i>&nbsp;Schedules<i class="icon-arrow-right icon-large"></i></a></li>
-									<li><a href="sched_today.php"><i class="icon-file-alt icon-large"></i>&nbsp;Current Date's Schedule<i class="icon-arrow-right icon-large"></i></a></li>
-									<li><a href="service.php"><i class="icon-medkit	icon-large"></i>&nbsp;Services Provided<i class="icon-arrow-right icon-large"></i></a></li>
-									<li><a href="user.php"><i class="icon-user icon-large"></i>&nbsp;Staff Accounts<i class="icon-arrow-right icon-large"></i></a></li>
-									<li><a href="members.php"><i class="icon-group icon-large"></i>&nbsp;Customer List<i class="icon-arrow-right icon-large"></i></a></li>
-									<li><a href="inventory.php"><i class="icon-file icon-large"></i>&nbsp;Inventory List<i class="icon-arrow-right icon-large"></i></a></li>
-									<li><a href="note.php"><i class="icon-file icon-large"></i>&nbsp;Announcements<i class="icon-arrow-right icon-large"></i></a></li>
+									<li><a href="schedule.php"><i class="icon-list icon-large"></i>&nbsp; Schedules<i class="icon-chevron-right icon-large"></i></a></li>
+									<li><a href="sched_today.php"><i class="icon-file-alt icon-large"></i>&nbsp;&nbsp; Current Date's Schedule<i class="icon-chevron-right icon-large"></i></a></li>
+									<li><a href="service.php"><i class="icon-medkit	icon-large"></i>&nbsp; Services Provided<i class="icon-chevron-right icon-large"></i></a></li>
+									<li><a href="user.php"><i class="icon-user icon-large"></i>&nbsp;&nbsp;&nbsp;Staff Accounts<i class="icon-chevron-right icon-large"></i></a></li>
+									<li><a href="members.php"><i class="icon-group icon-large"></i>&nbsp; Customer List<i class="icon-chevron-right icon-large"></i></a></li>
+									<li><a href="inventory.php"><i class="icon-folder-open icon-large"></i>&nbsp; Inventory List<i class="icon-chevron-right icon-large"></i></a></li>
+									<li><a href="note.php"><i class="icon-file icon-large"></i>&nbsp;&nbsp;&nbsp;Announcements<i class="icon-chevron-right icon-large"></i></a></li>
 								</ul>
 							</div>

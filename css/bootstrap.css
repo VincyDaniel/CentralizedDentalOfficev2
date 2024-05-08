@@ -4328,7 +4328,6 @@ input[type="submit"].btn.btn-mini {
 
 .navbar-inner:before,
 .navbar-inner:after {
-  display: table;
   line-height: 0;
   content: "";
 }
@@ -4548,7 +4547,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav > li > a {
   float: none;
   padding: 10px 15px 10px;
-  color: #777777;
+  color: #c9c6c6;
   text-decoration: none;
   text-shadow: 0 1px 0 #ffffff;
 }
@@ -4838,13 +4837,6 @@ input[type="submit"].btn.btn-mini {
   background-color: #000000 \9;
 }
 
-ul.nav {
-  padding-top: 20px;
-}
-
-.navbar-inner .nav li:first-child {
-  margin-right: 200px;
-}
 
 .nav-collapse ul.nav li:not(:first-child) {
   margin-top: 20px; 
