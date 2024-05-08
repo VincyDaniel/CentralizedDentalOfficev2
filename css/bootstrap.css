@@ -6498,8 +6498,3 @@ footer span.fw-light {
 .fadeInTop {
   animation-name: fadeInTop;
 }
-
-/* Add this CSS to align the Business Concept description to the right */
-.container .row .col-lg-6:nth-child(odd) {
-  text-align: right;
-}
