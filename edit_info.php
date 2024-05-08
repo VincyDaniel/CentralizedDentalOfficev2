@@ -2,10 +2,27 @@
 <?php include('session.php'); ?>
 <?php include('dbcon.php'); ?>
 <?php include('navbar_dasboard.php'); ?>
+
+<style>
+.custom-navbar .nav > li {
+    margin-right: 10px; /* Adjust as needed */
+}
+
+.custom-navbar .navbar-inner .container {
+    width: 95%; /* Adjust container width as needed */
+}
+
+.custom-navbar .welcome-item {
+    margin-top: 20px; /* Adjust as needed to move it down */
+    margin-left: 50px; /* Adjust as needed to move it to the left */
+}
+</style>
+
+
     <div class="container">
 		<div class="margin-top">
 			<div class="row">
-				
+<br><br><br><br>
 			<div class="span3" style="background-image: url('set2.png');">
 							<ul class="nav nav-tabs nav-stacked">
 							<li class="active">

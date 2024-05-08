@@ -32,22 +32,22 @@
                     <h5 class = "fw-light">Product Related</h5>
                     <ul class = "list-unstyled">
                         <li class = "my-3">
-                            <a href = "proj_product_earrings.html" class = "text-white text-decoration-none text-muted">
+                            <a href = "services.php#BasicServices" class = "text-white text-decoration-none text-muted">
                                 <i class = "fas fa-chevron-right me-1"></i> Basic Services
                             </a>
                         </li>
                         <li class = "my-3">
-                            <a href = "proj_product_mugs.html" class = "text-white text-decoration-none text-muted">
+                            <a href = "services.php#DigitalXrays" class = "text-white text-decoration-none text-muted">
                                 <i class = "fas fa-chevron-right me-1"></i> Xrays
                             </a>
                         </li>
                         <li class = "my-3">
-                            <a href = "proj_product_pots.html" class = "text-white text-decoration-none text-muted">
+                            <a href = "services.php#Under" class = "text-white text-decoration-none text-muted">
                                 <i class = "fas fa-chevron-right me-1"></i> Dental Networks
                             </a>
                         </li>
                         <li class = "my-3">
-                            <a href = "proj_gallery.html" class = "text-white text-decoration-none text-muted">
+                            <a href = "services.php#Accredited" class = "text-white text-decoration-none text-muted">
                                 <i class = "fas fa-chevron-right me-1"></i> Accredited Health Cards
                             </a>
                         </li>

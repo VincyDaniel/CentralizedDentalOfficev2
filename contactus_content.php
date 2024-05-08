@@ -14,19 +14,17 @@
 			<div class="contact-in">
 				<h1>Contact Info</h1>
 				<h2><i class="fa fa-phone" aria-hidden="true"></i> Phone</h2>
-				<p>09399650019</p>
+				<p>0917 833 0278</p>
 				<h2><i class="fa fa-envelope" aria-hidden="true"></i> Email</h2>
-				<p>lacasadeceramica@gmail.com</p>
+				<p>creencia_cruz@yahoo.com</p>
 				<h2><i class="fa fa-map-marker" aria-hidden="true"></i> Address</h2>
-				<p>E Rodriguez Ave, Taytay, 1920 Rizal</p>
+				<p>G/f Tri-seven Bldg. N. Roxas St. cor. Marcos Highway, Cainta, Philippines</p>
 				<ul>
-					<li><a href="https://www.facebook.com/LaCasaDeCeramicaPH"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-					<li><a href="https://twitter.com/LCdeCeramicaPH"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-					<li><a href="https://www.instagram.com/lacasadeceramicaph/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					<li><a href="https://web.facebook.com/profile.php?id=100057238428144"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 				</ul>
 				<table class="table table-bordered border-dark caption-top text-center" style="width: 100%">
 				</br>
-				<caption class="text-center fs-4 text-dark"> <b> Store Business Hours </b> </caption>
+				<caption class="text-center fs-4 text-dark"> <b> Dental Office Business Hours </b> </caption>
 				<tr>
 					<th> Day </th>
 					<th> Opening Time </th>

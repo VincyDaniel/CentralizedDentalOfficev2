@@ -26,7 +26,9 @@
         }
     }
 ?>
-<form method="post">    
+<form method="post">   
+<hr size=5px, color=#000000, style="width: 100%; margin: auto;">
+<br> 
     <div class="span5">
         <div class="form-horizontal">
             <div class="control-group">
@@ -101,4 +103,6 @@
             </div>
         </div>
     </div>
+    <hr size=5px, color=#000000, style="width: 100%; margin: auto;">
+    <br>
 </form>

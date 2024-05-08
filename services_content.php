@@ -1,5 +1,7 @@
-<div class="alert alert-info">List of Serivices Offered	</div>
-       <table cellpadding="0" cellspacing="0" border="0" class="table  table-bordered" id="example">
+<link href="style_services_content.css" rel="stylesheet" type="text/css">
+
+<div class="alert alert-info">List of Services Offered	</div>
+       <table cellpadding="0" cellspacing="0" border="0" class="table table-bordered custom-table" id="example">
                             
                                 <thead>
                                     <tr>
