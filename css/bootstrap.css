@@ -676,16 +676,20 @@ cite {
 }
 
 .masthead {
-  background-image: url('set.png');
-	background-size: cover;
-	min-height:60vh;
-  height: 570px; /* Adjust height to match previous margin-top value */
-	position: absolute;
-	left: 0;
-	top: 20px;
-	width: 100%;
-	z-index: -1;
-	padding-top: 104px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  left: 0;
+  top: -40px;
+  height: 80vh;
+  width: 100%;
+  padding-top: 104px;
+}
+
+@media (max-width: 768px){
+.masthead{
+  min-height: 30vh;
+}
 }
 
 .muted {
@@ -3176,8 +3180,8 @@ button.close {
 
 .login_sign_up {
   position: absolute;
-  top: 28%; /* Adjust as needed */
-  align-items: center; /* Center vertically */
+  left: 105%;
+  bottom: 5px;
 }
 
 .btn {
@@ -3207,13 +3211,13 @@ button.close {
 }
 
 #signup {
-  color: #000000; /* Black color for the sign-up link */
+  color: #ffffff; /* Black color for the sign-up link */
   text-decoration: none;
-  margin-left: 5px; /* Add margin for spacing */
+  margin-right: 25px; /* Add margin for spacing */
 }
 
 #signup:hover {
-  color: #000000; /* Hover color */
+  color: #fffff; /* Hover color */
 }
 
 .btn:hover,
@@ -4859,11 +4863,8 @@ input[type="submit"].btn.btn-mini {
   background-image: url('backgroundhigh.png');
 	background-size: cover;
 	min-height:60vh;
-  height: 570px; /* Adjust height to match previous margin-top value */
+  height: 540px; /* Adjust height to match previous margin-top value */
 	position: absolute;
-	left: 0;
-	top: 20px;
-	width: 100%;
 	z-index: -1;
 	padding-top: 104px;
 }
@@ -6070,4 +6071,422 @@ a.badge:focus {
 
 .affix {
   position: fixed;
+}
+
+/* Style for Collection Section */
+
+.title h2 {
+  color: #333; /* Set title color */
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif; /* Set font-family to Poppins */
+}
+
+.collection-list {
+  display: grid; /* Use CSS grid */
+  grid-template-columns: repeat(4, minmax(120px, 1fr)); /* Dynamic columns */
+  gap: 20px; /* Gap between items */
+}
+
+.collection-list > :first-child {
+  grid-column: 1 / span 1; /* Set the first item to span 1 column */
+}
+
+.collection-list .collection-img {
+  overflow: hidden; /* Hide overflowing content */
+  border-radius: 20px; /* Add border radius */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+  position: relative; /* Set position to relative */
+  transition: transform 0.3s ease; /* Add transition */
+}
+
+.collection-list img {
+  width: 100%;
+  height: auto;
+}
+
+.collection-list .collection-img::before {
+  content: ''; /* Add pseudo-element */
+  position: absolute; /* Set position to absolute */
+  top: 0; /* Position from top */
+  left: 0; /* Position from left */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  opacity: 0; /* Start with 0 opacity */
+  transition: opacity 0.3s ease; /* Add transition */
+}
+
+.collection-list .collection-img:hover::before {
+  opacity: 1; /* Change opacity on hover */
+}
+
+.collection-list img:hover {
+  transform: scale(1.05); /* Scale up image on hover */
+}
+
+.rating .text-primary {
+  color: #ffc107; /* Set star color */
+}
+
+.text-center p {
+  font-size: 1.1rem; /* Set product name font size */
+  margin-bottom: 5px; /* Add bottom margin */
+}
+
+.text-center .fw-bold {
+  font-size: 1.2rem; /* Set price font size */
+}
+
+.filter-button-group .btn {
+  border: 1px solid #007bff; /* Set button border */
+  color: #007bff; /* Set button text color */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Add smooth transition */
+}
+
+.filter-button-group .btn.active-filter-btn {
+  background-color: #007bff; /* Set active button background color */
+  color: #fff; /* Set active button text color */
+}
+
+.filter-button-group .btn:hover {
+  background-color: #007bff; /* Set button background color on hover */
+  color: #fff; /* Set button text color on hover */
+}
+
+/* animation */
+
+.animation {
+  animation-duration: 1s; /* Set animation duration */
+  animation-fill-mode: both; /* Apply animation styles before and after animation */
+}
+
+@keyframes fadeInTop {
+  0% {
+      opacity: 0;
+      transform: translateY(-50px); /* Move element up */
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0); /* Move element back to its original position */
+  }
+}
+
+.fadeInTop {
+  animation-name: fadeInTop; /* Apply fadeInTop animation */
+}
+
+.decorative-bar-vertical {
+  width: 6px; /* Adjust the width as needed */
+  height: 50px; /* Adjust the height as needed */
+  background-color: #78dce4; /* Set the color of the bar */
+  display: inline-block;
+  margin-right: 10px; /* Adjust the spacing between the bar and the text */
+  position: relative;
+  top: 6px; /* Adjust the vertical position of the bar */
+}
+
+/* special */
+.special-img span{
+  top: 20px;
+  right: 20px;
+}
+
+.special-img img{
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.special-img:hover img{
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+/* Style for Special Section */
+
+#special .title h2 {
+  color: #333; /* Set title color */
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif; /* Set font-family to Poppins */
+}
+
+#special .row {
+  display: flex; /* Use flexbox */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: center; /* Center items horizontally */
+  gap: 10px; /* Remove the gap between items */
+}
+
+#special .special-img {
+  overflow: hidden; /* Hide overflowing content */
+  border-radius: 15px; /* Add border radius */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+  position: relative; /* Set position to relative */
+  transition: transform 0.3s ease; /* Add transition */
+  width: 300px; /* Reduce the width of the container */
+  height: 300px; /* Reduce the height of the container */
+}
+
+#special .row > :first-child {
+  grid-column: 1 / span 1; /* Set the first item to span 1 column */
+}
+
+#special img {
+  width: 100%;
+  height: auto;
+}
+
+#special .special-img::before {
+  content: ''; /* Add pseudo-element */
+  position: absolute; /* Set position to absolute */
+  top: 0; /* Position from top */
+  left: 0; /* Position from left */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  opacity: 0; /* Start with 0 opacity */
+  transition: opacity 0.3s ease; /* Add transition */
+}
+
+#special .special-img:hover::before {
+  opacity: 1; /* Change opacity on hover */
+}
+
+#special img:hover {
+  transform: scale(1.05); /* Scale up image on hover */
+}
+
+#special .text-primary {
+  color: #ffc107; /* Set star color */
+}
+
+#special .text-center p {
+  font-size: 1.1rem; /* Set product name font size */
+  margin-bottom: 5px; /* Add bottom margin */
+}
+
+#special .text-center .fw-bold {
+  font-size: 1.2rem; /* Set price font size */
+}
+
+#special .animation {
+  animation-duration: 1s; /* Set animation duration */
+  animation-fill-mode: both; /* Apply animation styles before and after animation */
+}
+
+#special .fadeInTop {
+  animation-name: fadeInTop; /* Apply fadeInTop animation */
+}
+
+/* Add margin-bottom to the div containing the discount text */
+.discount-text {
+  margin-bottom: 40px;
+}
+
+/* Other CSS styles remain the same */
+#offers {
+  background-image: url("../img/thumbnails/backgroundbook.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#offers .row {
+  min-height: 60vh;
+}
+.offers-content {
+  margin-top: 130px; /* Adjust the margin-top value as needed */
+}
+.offers-content span {
+  font-size: 55px;
+}
+.offers-content h2 {
+  font-size: 65px;
+  font-family: var(--lg-font);
+}
+.offers-content .btn {
+  border-color: transparent!important;
+  font-size: 28px;
+  background-color: #00c2cb;
+  padding: 10px 18px;
+}
+
+.offers-content span,
+.offers-content h2 {
+  margin-bottom: 50px; /* Adjust margin bottom as needed for spacing */
+}
+
+/* Footer styling */
+footer {
+  background-color: #28242c;
+  padding-top: 20px; /* Adjust top padding as needed */
+  padding-bottom: -5px; /* Adjust bottom padding as needed */
+}
+
+/* Change text color of links */
+footer a {
+  color: #6c757d; /* Gray color for links */
+  text-decoration: none; /* Remove default underline */
+}
+
+/* Change text color of links on hover */
+footer a:hover {
+  color: #00c2cb; /* Blue color on hover */
+  text-decoration: none; /* Remove default underline */
+}
+
+/* Make text with class "fw-light" white */
+footer .fw-light {
+  color: #fff; /* White color for text */
+  font-size: 15px;
+}
+
+/* Adjust padding/margin for paragraphs */
+footer p {
+  margin-top: 50px;
+}
+
+#footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-content: center; /* Center horizontally */
+  font-size: 24px; /* Adjust font size as needed */
+}
+
+#footer-columns > div {
+  width: 25%; /* Each column occupies 20% of the width */
+  margin-right: 30px; /* Add more margin between columns */
+}
+
+/* Adjust spacing for the fourth column */
+#footer-columns > div:nth-child(4) {
+  margin-right: -160px; /* Add more margin to the right of the fourth column */
+}
+
+/* Set font size for the heading */
+#footer-columns > div h5 {
+  font-size: 1.25rem; /* Adjust font size as needed */
+  font-weight: lighter; /* Adjust font weight to make it less bold */
+  margin-bottom: 18px;
+}
+
+/* Set font size for list items */
+#footer-columns > div ul li {
+  font-size: 1rem; /* Adjust font size as needed */
+  margin-bottom: 10px; 
+}
+
+/* Make text with class "fw-light" white */
+footer .fw-light {
+  color: #fff; /* White color for text */
+}
+
+/* Override color for spans with class "fw-light" */
+footer span.fw-light {
+  color:  #6c757d; /* Specify your desired color for spans with class "fw-light" */
+}
+
+/* Remove right margin from the last column */
+#footer-columns > div:last-child {
+  margin-right: 0;
+}
+
+.footer-text {
+  color: white; /* White color for the text */
+  text-decoration: none; /* Remove default underline */
+  text-align: center; /* Center-align the text */
+  font-size: 14px; /* Adjust font size as needed */
+  line-height: 1.5; /* Adjust line height as needed */
+}
+
+.footer-text:hover {
+  color: #f8f9fa; /* Change color on hover */
+  text-decoration: underline; /* Underline to indicate a link */
+  cursor: pointer;
+}
+
+/* content3 code */
+
+/* Style for the features section */
+
+/* Title style */
+.features .title {
+  margin-bottom: 50px;
+}
+
+/* Box container style */
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Individual box style */
+.box {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+}
+
+/* Image style */
+.box img {
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+/* Title style */
+.box h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Price style */
+.box span {
+  font-weight: bold;
+  font-size: 20px;
+  color: #007bff;
+}
+
+/* Description style */
+.box p {
+  font-size: 16px;
+  color: #666;
+  margin-top: 20px;
+}
+
+/* Animation */
+.animation {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+/* Fade-in from the top animation */
+@keyframes fadeInTop {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInTop {
+  animation-name: fadeInTop;
 }

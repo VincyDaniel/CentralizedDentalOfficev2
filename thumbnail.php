@@ -1,42 +1,64 @@
-	<ul id="da-thumbs" class="da-thumbs">
-					<li>
-						<a href="">
-							<img src="images/b.jpg" />
-							<div><span>Image 1</span></div>
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<img src="images/c.jpg" />
-							<div><span>Image 2</span></div>
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<img src="images/d.jpg" />
-							<div><span>Image 3</span></div>
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<img src="images/e.jpg" />
-							<div><span>Image 4</span></div>
-						</a>
-					</li>
-					
-				
-				
-				</ul>
-							<div class="social_con">
-								<div class="social_index">
-								<div class="mm"><img src="img/32x32/facebook.png"></div><div class="fb">Like us On facebook</div>						
-								</div>
-							<div class="social_index">
-							<div class="mm"><img src="img/32x32/twitter.png"></div><div class="twitter">Follow us on twitter</div>
-							</div>
-							<div class="social_index">
-							<div class="mm"><img src="img/32x32/rss.png"></div><div class="rss">Feed us On Rss</div>
-							</div>
-							</div>
+<section id = "collection" class = "py-5">
+        <div class = "container">
+			<div class="title text-center">
+   			 	<h2 class="position-relative d-inline-block fs-1 animation fadeInTop">
+        		<span class="decorative-bar-vertical"></span> Xrays and Services
+    			</h2>
+			</div>
+
+            <div class = "row g-0">
+				<br> <br>
+                <div class = "collection-list mt-4 row gx-0 gy-3">
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+                        <div class = "collection-img position-relative">
+                            <img src = "img/thumbnails/services1.png" alt = "panoramic" class = "w-100">
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+                        <div class = "collection-img position-relative">
+                            <img src = "img/thumbnails/services2.png" alt = "cephalometric" class = "w-100">
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 sale">
+                        <div class = "collection-img position-relative">
+                            <img src = "img/thumbnails/services3.png" alt = "occlusal xray" class = "w-100">
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 sale">
+                        <div class = "collection-img position-relative">
+                            <img src = "img/thumbnails/services4.png" alt = "periapical xray" class = "w-100">
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                        <div class = "collection-img position-relative">
+                            <img src = "img/thumbnails/services5.png" alt = "basic dental services" class = "w-100">
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                        <div class = "collection-img position-relative">
+                            <img src = "img/thumbnails/services6.png" alt = "root canal therapy" class = "w-100">
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                        <div class = "collection-img position-relative">
+                            <img src = "img/thumbnails/services7.png" alt = "gum treatment" class = "w-100">
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                        <div class = "collection-img position-relative">
+                            <img src = "img/thumbnails/services8.png" alt = "teeth whitening" class = "w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
                        
                        
