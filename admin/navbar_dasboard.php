@@ -1,6 +1,17 @@
-	    <div class="navbar">
+       <div class="navbar">
     <div class="navbar-inner">
-<div class="pull-right">
+<div class="pull-left">
+<style>
+.navbar-inner .nav li:first-child {
+  margin-right: 0px;
+}
+.navbar-inner {
+	padding-left: 0px;
+}
+ul.nav {
+  padding-top: 0px;
+}
+</style>
     <ul class="nav">
     <li><a href="dasboard.php"><div class="icon_size"><i class="icon-home icon-large"></i></div></a></li>
 		<li class="divider-vertical"></li>

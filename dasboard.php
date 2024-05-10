@@ -232,7 +232,7 @@ body {
 
 		?>
 		<div class="question">
-		<div class="alert alert-success">Your the number <strong><?php echo $equal; ?></strong> client in this date <strong><?php echo  $date; ?></strong></div>
+		<div class="alert alert-success">You have set a date for <?php echo  $date; ?>, staff will email you a confirmation for your booking.</div>
 		<form method="POST" action="yes.php">
 		<input type="hidden" name="session_id" value="<?php echo $session_id; ?>" >
 		<input type="hidden" name="date1" value="<?php echo $date; ?>" >

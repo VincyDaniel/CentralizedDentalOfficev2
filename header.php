@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Wisdom Dental Care</title>
+	<title>Creencia Cruz Dental</title>
 			<link href="img/log.png" rel="icon">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Bootstrap -->

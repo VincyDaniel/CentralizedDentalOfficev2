@@ -4,6 +4,104 @@
 <?php include('navbar_dasboard.php'); ?>
 
 <style>
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    padding: 12px 16px;
+}
+
+th {
+    background-color: #4e8cff;
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #e7f0ff;
+}
+
+tr:hover {
+    background-color: #d2e4ff;
+}
+
+.image-container {
+    border: 4px solid #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.alert-info,
+.alert-success,
+.alert-danger {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.alert-info {
+    border: 2px solid #4e8cff;
+    color: #004085;
+    background-color: #e7f0ff;
+}
+
+.alert-success {
+    border: 2px solid #28a745;
+    color: #155724;
+    background-color: #d4edda;
+    font-weight: bold;
+}
+
+.alert-danger {
+    border: 2px solid #dc3545;
+    color: #721c24;
+    background-color: #f8d7da;
+    font-weight: bold;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f4f8;
+    padding: 20px;
+}
+
+.btn-info {
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    color: #ffffff;
+    padding: 12px 24px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.btn-info:hover {
+    border-color: #ffffff;
+}
+
+.icon-large {
+    font-size: 20px;
+    margin-right: 8px;
+}
 .custom-navbar .nav > li {
     margin-right: 10px; /* Adjust as needed */
 }
@@ -24,12 +122,6 @@
 			<div class="row">
 <br><br><br><br>
 			<div class="span3" style="background-image: url('set2.png');">
-							<ul class="nav nav-tabs nav-stacked">
-							<li class="active">
-							</li>
-					
-						</ul>
-						<p><strong>Today is:</strong></p>
 				 <div class="alert alert-success">
                         <i class="icon-calendar icon-large"></i>
                         <?php
@@ -184,39 +276,7 @@
 	}	
 	?>
 
-<div class="alert alert-info">Current Schedule</div>
-	<table class="table  table-bordered">
-										
-										<thead>
-											<tr>
-												<th>Member</th>
-												<th>Date</th>
-												<th>Service</th>
-											</tr>
-										</thead>
-										<tbody>
-										
-										<?php $user_query=mysqli_query($conn,"select * from schedule")or die(mysqli_error($conn));
-									while($row=mysqli_fetch_array($user_query)){
-									$id=$row['id'];
-									$member_id = $row['member_id'];
-									$service_id = $row['service_id'];
-									/* member query  */
-									$member_query = mysqli_query($conn,"select * from members where member_id = ' $member_id'")or die(mysqli_error($conn));
-									$member_row = mysqli_fetch_array($member_query);
-									/* service query  */
-									$service_query = mysqli_query($conn,"select * from service where service_id = '$service_id' ")or die(mysqli_error($conn));
-									$service_row = mysqli_fetch_array($service_query);
-									?>
-									
-									<tr class="del<?php echo $id ?>">
-                                    <td><?php echo $member_row['firstname']." ".$member_row['lastname']; ?></td> 
-                                    <td><?php echo $row['date'];?></td> 
-                                    <td><?php echo $service_row['service_offer'];?></td> 
-									<?php } ?>
-                           
-                                </tbody>
-                            </table>
+
 	
 
 	

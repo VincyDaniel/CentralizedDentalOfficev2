@@ -9,7 +9,9 @@
 		<div style="width: 20px;"></div>
         <div style="flex: 1;"> <!-- Content -->
 		<img src="../img/dr.jpg" class="img-rounded" style="width: 409px; height: 115px;">
+        <br>
 		<div style="margin-right: 40px;"> <!-- Navbar with right margin -->
+        <br>
             <?php include('navbar_dasboard.php'); ?>
             <br>
             <div class="body_img">

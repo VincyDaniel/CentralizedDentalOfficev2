@@ -62,3 +62,9 @@
 									<li><a href="note.php"><i class="icon-file icon-large"></i>&nbsp;&nbsp;&nbsp;Announcements<i class="icon-chevron-right icon-large"></i></a></li>
 								</ul>
 							</div>
+
+<style>
+.side_dental{
+ margin-top: 12px;
+}
+</style>

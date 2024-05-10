@@ -2,6 +2,9 @@
 <?php include('session.php'); ?>
 <?php include('dbcon.php'); ?>
 <?php include('navbar_dasboard.php'); ?>
+<br>
+<br>
+<br>
 <style>
 table {
     width: 100%;
@@ -101,8 +104,21 @@ body {
     margin-right: 8px;
 }
 
+.custom-navbar .nav > li {
+    margin-right: 10px; /* Adjust as needed */
+}
 
-</style>    
+.custom-navbar .navbar-inner .container {
+    width: 95%; /* Adjust container width as needed */
+}
+
+.custom-navbar .welcome-item {
+    margin-top: 20px; /* Adjust as needed to move it down */
+    margin-left: 50px; /* Adjust as needed to move it to the left */
+}
+
+
+</style>
 
 <div class="container">
 		<div class="margin-top">
@@ -189,8 +205,10 @@ body {
 							</table>
 				</div>
 				<div class="span6">
-					<img src="img/dr.jpg">
-					<br>
+				<div class="image-container">
+    				<img src="img/dr.jpg" alt="Aesthetic Image">
+				</div>
+			
 					<br>
 					
 				<div class="alert alert-info">Select Date of Appointment and Service Offer</div>
