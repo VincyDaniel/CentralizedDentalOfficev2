@@ -24,6 +24,12 @@ The Dental Office Website includes the following pages:
 VincyDaniel 
 [VincyDaniel](https://www.linkedin.com/in/vince-daniel-del-rosario-815a11205/)
 
+Janno1402
+[Janno1402](https://www.linkedin.com/in/christian-benjamin-so-4700661a7/)
+
+ImYoshiNim
+[ImYoshiNim](https://www.linkedin.com/in/adam-buenaventura/)
+
 ## License
 
 This project is licensed under the VincyDaniel License - see the LICENSE.md file for details
